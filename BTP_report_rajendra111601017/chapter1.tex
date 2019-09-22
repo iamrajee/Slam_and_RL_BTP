@@ -1,0 +1,38 @@
+\chapter{Introduction}
+\pagenumbering{arabic}\hspace{3mm}
+
+During my summer internship at UST Global, I studied various slam algorithm. Now my attempt is to write reinforcement learning based slam algorithm for robot control, path planning, mapping and localization.
+
+\section{SLAM}
+Simultaneous localization and mapping is a problem where a moving object needs to build a map of an unknown environment, while simultaneously calculating its position within this map. There are several areas which could benefit from having autonomous vehicles with SLAM algorithms implemented. Examples would be the mining industry, underwater exploration, and planetary exploration. 
+
+The SLAM problem, in general, can be formulated using a probability density function denoted 
+\\\textbf{p(xt, m|z1: t, u1:t )}
+\\where,
+\\xt       -  position of the vehicle at time t
+\\m       -  map
+\\z1:t    -  vector of all measurements(Observations)
+\\u1:t    - vector of the control signals of the vehicle(control commands or odometry)
+
+
+\section{Goal for this semester}
+
+For this semester my main focus is to write the efficient reinforcement learning based algorithm for slam, test and analysis them with simulated robot using ros.
+I will be learning to design the custom environment for simulations.
+By the end this semester I start implementing this algorithm on the real hardware.
+
+\section{Organization of The Report}
+
+Code written for slam package is large and is in form of ros packages, hence this report contain just few main codes and their documentation and formulation.
+\\
+In first chapter, we're discussing about the slam algorithm, goal for this semester and organisation of content in this report.
+\\
+In second chapter, we'll discuss about the PID controller algorithm to control the drone, and its implementation using the ROS and VREP.
+\\
+In third chapter, we'll discuss about the Q-learning and it implementation on mountain car problem using the openAI gym.
+\\
+In four chapter, we'll discuss about the ROS based openAI implementation for controlling the drone using the Q learning.
+\\
+In the end, fifth chapter contain the conclusion and future work.
+
+
